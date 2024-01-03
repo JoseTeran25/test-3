@@ -1,0 +1,24 @@
+.card {
+  margin: 10px;
+}
+
+.card-body-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.boton-español,
+.boton-ingles,
+.boton-sanscrito {
+  margin: 5px;
+}

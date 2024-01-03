@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Dancing+Script&family=Kalnia:wght@200&family=Michroma&family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+.contenido-principal-1 {
+  height: 100vh;
+}
+
+#nav-bar {
+  background-color: aqua;
+  justify-self: left;
+  align-self: left;
+}
+
+.contenedor-principal {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+
+.contenedor-principal.visible {
+  opacity: 1;
+}
+
+.contenedor-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 90px;
+}
+
+.contenedor-titulo h1 {
+  font-family: 'Pacifico', sans-serif;
+  font-size: calc(2rem + 1vw);
+  text-align: center;
+  margin: 20px;
+}
+
+.input-gruop {
+  max-width: 700px;
+  min-width: 300px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: 0;
+  opacity: 0;
+  height: 75%;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.contenedor-tarjetas.visible {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.dark-theme {
+  background-color: #212529;
+  color: #fff;
+}
+
+.contenedor-sin-resultados {
+  color: rgb(255, 5, 5);
+  font-family: 'Courier New', Courier, monospace;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
